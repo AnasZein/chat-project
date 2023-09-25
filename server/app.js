@@ -31,7 +31,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
-app.use("/user", userRouter);
+app.use("/users", userRouter); //it's best to use Plural Nouns
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
